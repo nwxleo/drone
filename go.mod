@@ -44,6 +44,7 @@ require (
 	github.com/kr/pretty v0.2.0 // indirect
 	github.com/lib/pq v1.1.0
 	github.com/mattn/go-sqlite3 v1.9.0
+	github.com/nwxleo/go-scm v0.0.0-20230522110154-237caf3ced68
 	github.com/oxtoacart/bpool v0.0.0-20150712133111-4e1c5567d7c2
 	github.com/prometheus/client_golang v0.9.2
 	github.com/rainycape/unidecode v0.0.0-20150907023854-cb7f23ec59be // indirect

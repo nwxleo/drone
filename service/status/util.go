@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	"github.com/drone/drone/core"
-	"github.com/drone/go-scm/scm"
+	"github.com/nwxleo/go-scm/scm"
 	"github.com/gosimple/slug"
 )
 

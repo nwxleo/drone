@@ -2,8 +2,9 @@
 // Use of this source code is governed by the Drone Non-Commercial License
 // that can be found in the LICENSE file.
 
+//go:build !oss
 // +build !oss
 
 package mockscm
 
-//go:generate mockgen -package=mockscm -destination=mock_gen.go github.com/drone/go-scm/scm ContentService,GitService,OrganizationService,PullRequestService,RepositoryService,UserService
+//go:generate mockgen -package=mockscm -destination=mock_gen.go github.com/nwxleo/go-scm/scm ContentService,GitService,OrganizationService,PullRequestService,RepositoryService,UserService

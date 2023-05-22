@@ -2,6 +2,7 @@
 // Use of this source code is governed by the Drone Non-Commercial License
 // that can be found in the LICENSE file.
 
+//go:build !oss
 // +build !oss
 
 package cache
@@ -13,7 +14,7 @@ import (
 
 	"github.com/drone/drone/core"
 	"github.com/drone/drone/mock"
-	"github.com/drone/go-scm/scm"
+	"github.com/nwxleo/go-scm/scm"
 
 	"github.com/golang/mock/gomock"
 	"github.com/google/go-cmp/cmp"

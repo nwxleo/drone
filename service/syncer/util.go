@@ -16,7 +16,7 @@ package syncer
 
 import (
 	"github.com/drone/drone/core"
-	"github.com/drone/go-scm/scm"
+	"github.com/nwxleo/go-scm/scm"
 )
 
 // merge is a helper function that merges a subset of

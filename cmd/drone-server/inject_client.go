@@ -30,11 +30,11 @@ import (
 	"github.com/drone/go-scm/scm/driver/gitea"
 	"github.com/drone/go-scm/scm/driver/gitee"
 	"github.com/drone/go-scm/scm/driver/github"
-	"github.com/drone/go-scm/scm/driver/gitlab"
 	"github.com/drone/go-scm/scm/driver/gogs"
 	"github.com/drone/go-scm/scm/driver/stash"
 	"github.com/drone/go-scm/scm/transport/oauth1"
 	"github.com/drone/go-scm/scm/transport/oauth2"
+	"github.com/nwxleo/go-scm/scm/driver/gitlab"
 
 	"github.com/google/wire"
 	"github.com/sirupsen/logrus"
@@ -187,7 +187,7 @@ func provideGitlabClient(config config.Config) *scm.Client {
 				Endpoint:     strings.TrimSuffix(config.GitLab.Server, "/") + "/oauth/token",
 				Source:       oauth2.ContextTokenSource(),
 			},
-			Base:   defaultTransport(config.GitLab.SkipVerify),
+			Base: defaultTransport(config.GitLab.SkipVerify),
 		},
 	}
 	return client
